@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/************** Resets and Overrides **************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, label, textarea {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+body {line-height: 1;}
+ol, ul {list-style:none;}
+li {list-style:none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+
+/* remember to define focus styles! */
+:focus {outline: 0;}
+
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+
+/* HTML5 tags */
+header, section, footer, aside, nav, article, figure {display: block;}
+
+/*
+font-family: 'Gentium Basic', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+
+body {font-family: 'Gentium Basic', serif; background: url(../Graphics/bgIn.jpg) center 0 no-repeat #F9F9F9; color:#3a3a3a;}
+body#home {background: url(../Graphics/bgHome.jpg) center 0 no-repeat #F9F9F9;}
+#MainContainer {position:relative; width:920px; margin:10px auto;}
+
+header {float:left; padding:0 35px; width:850px;}
+header nav ul li {float:left; padding:0 17px;}
+header nav ul li a {font-family: 'Open Sans', sans-serif; color:#FFF; text-decoration:none; padding-top:40px; float:left; font-weight:600; font-size:16px;}
+header nav ul li a:hover, header nav ul li a.active {color:#CCC; text-decoration:underline;}
+header nav ul li.artha {width:171px; height:111px; text-indent:-99999px; padding:0;}
+header nav ul li.artha a {background: url(../Graphics/flx.png) no-repeat center; width:171px; height:111px; background-size:contain;}
+
+#widgets {float:left; width:100%; padding-top:310px;}
+#widgets div {float:left; width:270px; padding:0 18px; font-size:15px; line-height:18px;}
+#widgets div h3 {font-family: 'Open Sans', sans-serif; font-weight:300; font-size:19px; padding-bottom:20px;}
+#widgets div h3 span {font-weight:600;}
+#widgets div img {margin-bottom:10px;}
+#widgets a {color:#3a3a3a; text-decoration:none;}
+#widgets div a:hover {color:#3b3b3b; text-decoration:underline;}
+#widgets p {margin-bottom:7px;}
+
+#widgets div ul li {border-top:1px solid #DDD; list-style:none; float:left; padding:7px 0; width:100%;}
+#widgets div ul li:first-child {border-top:0 solid #DDD;}
+
+#contentL {float:left; width:645px; padding-top:10px; margin-top:190px; padding-right:30px; border-right:1px solid #e0e0e0;}
+#contentR {float:left; width:630px; padding-top:10px; margin-top:190px; padding-left:30px; border-left:1px solid #e0e0e0; height:350px;}
+#contentL h2, #contentR h2 {font-family: 'Open Sans', sans-serif; font-weight:300; font-size:19px; padding-bottom:20px;}
+#contentL h2 span, #contentR h2 span {font-weight:600;}
+#contentL p, #contentR p {font-size:15px; line-height:18px; margin-bottom:15px; text-align:justify;}
+#contentL ul, #contentL ol {padding-left:30px; font-size:15px;}
+#contentL ul li {list-style:circle; padding-bottom:5px; line-height:18px;}
+#contentL ol li {list-style:decimal; padding-bottom:15px; line-height:18px;}
+
+#contentL iframe {border-radius:5px; border:1px solid #ccc; box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3); margin-bottom:30px;}
+#contentL a, #contentR a {color:#3a3a3a; text-decoration:none; font-style:italic;}
+#contentL a:hover, #contentR a:hover {text-decoration:underline;}
+
+#sidebarR {float:right; width:220px; padding-top:10px; margin-top:190px; padding-left: 20px;}
+#sidebarR p {font-size:15px; line-height:18px; margin-bottom:10px;}
+#sidebarR h3, #sidebarL h3 {font-family: 'Open Sans', sans-serif; font-weight:300; font-size:19px; padding-bottom:20px;}
+#sidebarR h3 span, #sidebarL h3 span {font-weight:600;}
+#sidebarR input, #sidebarR textarea {background:#FFF; width:205px; padding:6px; border-radius:3px; border:1px solid #e2dfdd; font-family: 'Open Sans', sans-serif; font-size:13px; color:#333; font-weight:300; margin-bottom:10px;}
+#sidebarR button {background: url(../Graphics/button.png) no-repeat; text-indent:-99999px; width:110px; height:26px; border:0 solid #000; cursor:pointer;}
+
+#sidebarL {float:left; width:210px; padding-top:10px; margin-top:190px; padding-right:30px; }
+#sidebarL ul li {border-top:1px solid #DDD; list-style:none; float:left; padding:10px 0; width:100%;}
+#sidebarL ul li:first-child {border-top:0 solid #DDD;}
+#sidebarL a {color:#3a3a3a; text-decoration:none;}
+#sidebarL a:hover {color:#3b3b3b; text-decoration:underline;}
+
+footer {float:left; width:920px; text-align: center; border-top:2px solid #e8ebf0; color:#0d0c79; padding-top:10px; margin:60px 0 50px; line-height:18px; font-size:14px;}
